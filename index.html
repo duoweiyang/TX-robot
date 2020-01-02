@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="refresh" content="30">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"><title>RobotControl</title>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="left">
+    <div class="myRobot">
+      <img class="img-circle" src="/static/images/Island.jpg" alt="Robot Image">
+      <h1>TX Robot 1</h1>
+      <h3>Status: Connected</h3>
+      <hr class="left2" />
+      <div class="smallHeader">
+        <i class="material-icons cell iconsMedium">settings_input_svideo</i>
+        <div class="flexMe">Connection Quality</div>
+        <i class="material-icons cell statusOK">fiber_manual_record</i>
+      </div>
+      <div class="smallHeader">
+        <i class="material-icons cell iconsMedium">timer</i>
+        <div class="flexMe">Latency</div>
+        <i class="material-icons cell statusOK">fiber_manual_record</i>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="buttonContainer">
+      <button class ="buttonFlex stretch" onclick="window.location.href = 'robot2.html';">
+        <i class="material-icons cell iconsMedium">play_circle_outline</i><span class="flexMe">Shutdown</span></button>
+      <button class ="buttonFlex stretch" onclick="window.location.href = 'parameterList.html';">
+        <i class="material-icons cell iconsMedium">assignment</i><span class="flexMe">Parameter List</span></button>
+      <div class="dropdown stretch">
+        <button class="dropbtn stretch"><i class="material-icons cell iconsMedium">camera</i>
+          <span class="flexMe">Change robot</span>
+          <i class="material-icons scrollCell iconsMedium">arrow_drop_down</i>
+        </button>
+
+        <div class="dropdown-content stretch">
+          <a href="robot2.html">TX Robot 2</a>
+          <a href="#">TX Robot 3</a>
+          <a href="#">TX Robot 4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle">
+    <div class="messageContainer">
+      <div class="flexHeader">
+          <div><i class="material-icons cell iconsBig">camera_alt</i></div>
+          <div>Audiovisual System</div>
+          <div><i class="{{ AVS_STATUS_COLOR }}">fiber_manual_record</i></div>
+      </div>
+    <hr class="left2" />
+    <pre>{{ AVS_STATUS_PRINT }}</pre>
+    <div class="shutdown floatRight">
+      <a href="restartAudiovisual.html">SHUTDOWN</a>
+      </div>
+      <br />
+      <br />
+
+      <div class="flexHeader">
+        <div><i class="material-icons cell iconsBig">directions_run</i></div>
+        <div><span class="headerText">Motion Control</span></div>
+        <div><i class="{{ MOTION_STATUS_COLOR }}">fiber_manual_record</i></div>
+      </div>
+    <hr class="left2" />
+    <pre>{{ MOTION_STATUS_PRINT }}</pre>
+    <div class="shutdown floatRight">
+      <a href="selectMotion.html">SHUTDOWN</a>
+      </div>
+      <br />
+      <br />
+
+      <div class="flexHeader">
+        <div><i class="material-icons cell iconsBig">pan_tool</i></div>
+        <div><span class="headerText">Hands</span></div>
+        <div><i class="{{ HANDS_STATUS_COLOR }}">fiber_manual_record</i></div>
+      </div>
+    <hr class="left2" />
+    <pre>{{ HANDS_STATUS_PRINT }}</pre>
+    <div class="shutdown floatRight">
+      <a href="restartHands.html">SHUTDOWN</a>
+      </div>
+      <br />
+      <br />
+
+      <div class="flexHeader">
+        <div><i class="material-icons cell iconsBig">accessible_forward</i></div>
+        <div><span class="headerText">Locomotion</span></div>
+        <div><i class="{{ LOCOMOTION_STATUS_COLOR }}">fiber_manual_record</i></div>
+      </div>
+    <hr class="left2" />
+    <pre>{{ LOCOMOTION_STATUS_PRINT }}</pre>
+
+    <div class="shutdown floatRight">
+      <a href="restartLocomotion.html">SHUTDOWN</a>
+      </div>
+      <br />
+      <br />
+  </div>
+  </div>
+
+  <div class="right">
+    <div class="messageContainer">
+    <video class="center" controls>
+      <source src="My%20Movie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="keyPad">
+      <div class="floatLeft">
+        <div class="header">
+          <i class="material-icons cell iconsBig">directions</i>
+          <span class="headerText">Locomotion override</span>
+        </div>
+      </div>
+
+      <label class = "switch floatRight">
+          <input type = "checkbox">
+          <span class = "slider round"></span>
+      </label>
+
+
+    <div class="bigKeyContainer">
+    <div class="keyContainer">
+      <button class ="keyInvisible"></button>
+      <button class ="key"><i class="material-icons iconsBig">arrow_upward</i></button>
+      <button class ="keyInvisible"></button>
+    </div>
+    <div class="keyContainer">
+      <button class ="key"><i class="material-icons iconsBig">arrow_back</i></button>
+      <button class ="key"><i class="material-icons iconsBig">arrow_downward</i></button>
+      <button class ="key"><i class="material-icons iconsBig">arrow_forward</i></button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

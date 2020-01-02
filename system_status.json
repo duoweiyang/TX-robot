@@ -1,0 +1,26 @@
+{
+  "AudioVisualSystem": {
+    "StatusNames":[ "Camera", "OK", "Audio", "Microphone", "Giraffe"  ],
+    "StatusGreen": 1,
+    "StatusRed": 3,
+    "StatusYellow": 4
+  },
+    "MotionControlSystem": {
+    "StatusNames":[ "OK", "Collision", "PlanningToPosture", "ON FIRE"],
+    "StatusGreen": 0,
+    "StatusRed": 3,
+    "StatusYellow": 1
+  },
+    "HandsSystem": {
+    "StatusNames":[ "Not OK", "not connected", "OK"],
+    "StatusGreen": 2,
+    "StatusRed": 0,
+    "StatusYellow": 1
+  },
+    "LocomotionSystem": {
+    "StatusNames":[ "UserControl","MotionOverride", "Obstacle", "Moving", "OK"],
+    "StatusGreen": 4,
+    "StatusRed": 3,
+    "StatusYellow": 2
+  }
+}

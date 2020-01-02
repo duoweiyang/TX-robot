@@ -1,0 +1,594 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/materials.woff) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.iconsHuge {
+  font-size: 5.0rem;
+}
+
+.iconsBig {
+  font-size: 2.2rem;
+}
+
+.iconsMedium {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-left: 25px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 3px;
+  text-align: center;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+h4 {
+  margin: 10px;
+  text-align: left;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+h5 {
+  margin: 10px;
+  text-align: left;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+pre {
+  margin: 10px;
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+}
+
+hr.left2 {
+  margin-left: auto;
+  width: 100%;
+}
+
+.wrapper {
+  min-width: 1000px;
+  width: 100%;
+}
+
+/* These are the grey columns*/
+.left {
+  float: left;
+  width: 20%;
+  height: 100vh;
+}
+
+.middle {
+  float: left;
+  width: 40%;
+  height: 100vh;
+}
+
+.right {
+    float: left;
+    width: 40%;
+    height: 100vh;
+}
+
+/* Center the video */
+.center {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    display: block;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statusOK {
+  font-size: 1.0rem;
+  color: #b8e986;
+}
+
+.FuckedButNotTooMuch {
+  font-size: 1.0rem;
+  padding-left: 140px;
+  color: #f5a623;
+}
+
+.Fubar {
+  font-size: 1.0rem;
+  color: #d0021b;
+}
+
+.shutdown {
+  background-color: white;
+  color: #d0021b;
+  border: 1.2px solid #3d3c3c;
+  font-size: 80%;
+  font-family: "Helvetica", "Helvetica", Arial, sans-serif;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+  border-radius: 70px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.shutdown a {
+  color: #d0021b;
+  font-family: "Helvetica", "Helvetica", Arial, sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.motionFlex a {
+  color: black;
+  text-decoration: none;
+}
+
+/* The three buttons on the left column */
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #3d3c3c;
+  border-radius: 8px;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttonFlex {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d3c3c;
+  border-radius: 5px;
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.BigMotionFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.motionFlex {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 4%;
+  padding-right: 4%;
+  cursor: pointer;
+}
+
+.key {
+  background-color: #3d3c3c;
+  border-radius: 8px;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+  height: 90px;
+  width: 90px;
+  font-weight: lighter;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.keyInvisible {
+  background-color: #3d3c3c;
+  border-radius: 8px;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+  height: 90px;
+  width: 90px;
+  font-weight: lighter;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  opacity: 0;
+}
+
+/* Locomotion slider */
+.switch {
+  margin-top: 7px;
+  position: relative;
+  vertical-align: middle;
+  display: block;
+  width: 60px;
+  height: 28px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d44254;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-color: #b8e986;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #b8e986;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 70px;
+}
+
+.slider.round:before {
+  border-radius: 70%;
+}
+
+/* Putting two elements on the same line */
+.align-left {
+  float:left;
+}
+
+.align-right {
+  float: right;
+  width: 50%;
+}
+
+.buttonContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.messageContainer {
+  margin-top: 10px;
+  margin-right:10px;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+
+.bigKeyContainer {
+  margin-top: 90px;
+}
+
+.keyContainer {
+  border: 1px solid white;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.keyPad {
+  padding-left: 3.8%;
+  padding-right: 3.8%;
+  border: 1px solid white;
+}
+
+.stretch {
+  width: 100%;
+}
+
+.myRobot{
+  border: 1px dotted white;
+}
+
+/* dropdown menu for robots*/
+.dropbtn {
+    background-color: #3d3c3c;
+    border-radius: 5px;
+    color: white;
+    padding: 5%;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    margin-top: 2%;
+    margin-right: 5px;
+    cursor: pointer;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 8px;
+    background-color: white;
+    font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3d3c3c;}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.header {
+  display: table;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.smallHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  height: 30px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.flexMe {
+  flex-grow: 1;
+  padding-left: 3%;
+}
+
+.smallHeader div:first-child {
+  margin-right: 2%;
+}
+
+.smallHeader div:last-child {
+  margin-left: auto;
+  vertical-align: middle;
+}
+
+.headerText {
+  display: table-cell;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  vertical-align: middle;
+}
+
+.smallHeaderText {
+  display: table-cell;
+  font-size: 14px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.motionText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 16px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  padding-left: 14%;
+  padding-right: 14%;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  }
+
+.align {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.buttonBlock {
+  display: table-cell;
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+.cell {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.scrollCell {
+  vertical-align: middle;
+}
+
+.parameterText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 40px;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  vertical-align: middle;
+  align-items: center;
+  height: 5%;
+  width: 90%;
+  text-align: left;
+  overflow: hidden;
+  background-color: #3d3c3c;
+  color:white;
+}
+
+.parameterText div:first-child {
+  margin-right: 2%;
+}
+
+.parameterText div:last-child {
+  margin-left: auto;
+  vertical-align: middle;
+}
+
+.parameterRec {
+  width: 90%;
+  height:100vh;
+  color: white;
+  margin-top: 4.5%;
+  margin-right: 4.5%;
+  margin-left: 4.5%;
+  align-items: center;
+  background-color: #3d3c3c;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  padding: 4.5%;
+}
+
+/* flextest */
+.flexHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: "Helvetica Light", "Helvetica", Arial, sans-serif;
+  font-weight: lighter;
+  align-items: center;
+}
+
+.flexHeader div:first-child {
+  margin-right: 2%;
+}
+
+.flexHeader div:last-child {
+  margin-left: auto;
+  vertical-align: middle;
+}
